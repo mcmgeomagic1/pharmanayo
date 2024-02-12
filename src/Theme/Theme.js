@@ -9,10 +9,7 @@ const Theme = {
   colors: {
     background: "#F9F8FE",
     primary: "#25AAE2",
-    orange: "#FFAF40",
-    darkBlue: "#136284",
-    inputBackground: "#E7E7F2",
-    alternativeDarkBlue: "#136284",
+    boxBackground: "#DDE3E0",
     standard: {
       white: "#fff",
       black: "#000"
