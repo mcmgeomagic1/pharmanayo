@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pharmanayo/static/css/main.65a80ac4.css",
+    "main.js": "/pharmanayo/static/js/main.5721bd88.js",
+    "static/js/592.0c7eb5bb.chunk.js": "/pharmanayo/static/js/592.0c7eb5bb.chunk.js",
+    "static/media/hero2.png": "/pharmanayo/static/media/hero2.c27dae4d0cd7eb247bf2.png",
+    "static/media/servicos.png": "/pharmanayo/static/media/servicos.3fc26eb9478602293f76.png",
+    "static/media/HeaderImage.png": "/pharmanayo/static/media/HeaderImage.0491402c6a41ef119bd7.png",
+    "static/media/Annoucment.png": "/pharmanayo/static/media/Annoucment.4282c322ddd08a78ed6e.png",
+    "static/media/5.jpg": "/pharmanayo/static/media/5.486352f4ac8499d310c7.jpg",
+    "static/media/3.jpg": "/pharmanayo/static/media/3.fed9cc5c62bddb29ff4c.jpg",
+    "static/media/2.jpg": "/pharmanayo/static/media/2.af087d3ab0bd433d2562.jpg",
+    "static/media/1.jpg": "/pharmanayo/static/media/1.7e119210e71716c31d62.jpg",
+    "static/media/4.jpg": "/pharmanayo/static/media/4.edc26379fe544a0b2de3.jpg",
+    "index.html": "/pharmanayo/index.html",
+    "main.65a80ac4.css.map": "/pharmanayo/static/css/main.65a80ac4.css.map",
+    "main.5721bd88.js.map": "/pharmanayo/static/js/main.5721bd88.js.map",
+    "592.0c7eb5bb.chunk.js.map": "/pharmanayo/static/js/592.0c7eb5bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65a80ac4.css",
+    "static/js/main.5721bd88.js"
+  ]
+}
