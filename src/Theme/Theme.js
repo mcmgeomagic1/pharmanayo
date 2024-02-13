@@ -8,7 +8,7 @@ const Theme = {
   sideBarSlogan: "1386px",
   colors: {
     background: "#F9F8FE",
-    primary: "#25AAE2",
+    primary: "#78EF6E",
     boxBackground: "#DDE3E0",
     standard: {
       white: "#fff",
@@ -16,7 +16,7 @@ const Theme = {
     }
   },
   fontSize: {
-    extraBig: "210%",
+    extraBig: "201.5%",
     big: "120%",
     title: "105%",
     normal: "100%",

@@ -15,6 +15,10 @@
     	font-weight: 400;
 	}
 
+	header {
+		height: 100vh;
+	}
+
 	#root{
 		height: 100%;
 		position: relative;
@@ -37,19 +41,28 @@
 
 	h2 {
 		font-size: 180%;
+		width: 60%;
 	}
 
 	h3 {
-		font-size: 90%;
+		font-size: 100%;
 	}
 
 	p {
-		opacity: 0.7;
-		line-height: 25px;
+		opacity: .99;
+		line-height: 27px;
 	}
 
 	a {
 		text-decoration: none;
+	}
+
+	svg{
+		z-index: 0;
+	}
+
+	button  {
+		z-index: 10000;
 	}
 
 

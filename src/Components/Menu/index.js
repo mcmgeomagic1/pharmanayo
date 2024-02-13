@@ -12,7 +12,7 @@ export const Menu = () => {
     <Menubox>
       <AlertBar>
         <Emoji role="img" aria-label="Fire">🔥</Emoji>
-        <Text>Aplicação mobile disponível em breve</Text>
+        <Text>Application mobile disponible bientôt</Text>
       </AlertBar>
       <Container>
           <ContactBar>
@@ -31,9 +31,9 @@ export const Menu = () => {
         <Logo src={LogoImage} alt="Logo"/>
         <MenuItems>
           <MenuItem>Home</MenuItem>
-          <MenuItem>Serviços</MenuItem>
-          <MenuItem>Plataforma</MenuItem>
-          <MenuItem>Sobre nós</MenuItem>
+          <MenuItem>Services</MenuItem>
+          <MenuItem>Plateforme</MenuItem>
+          <MenuItem>À propos de nous</MenuItem>
         </MenuItems>
       </MenuBar>
       </Container>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container= styled.div`
-	width: 1290px;
+	width: 1400px;
 	height: auto;
 	margin: 0 auto;
 	display: block;
