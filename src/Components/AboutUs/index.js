@@ -1,6 +1,5 @@
 import React from 'react';
 import {AboutUsBox, Title, Content, Flex1, Flex2, Field, Form} from './style';
-import Image from "../../assets/images/Annoucment.png"
 import { Container } from '../../styles/Container';
 import { Button } from '../Button';
 import { MdOutlineEmail } from "react-icons/md";

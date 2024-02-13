@@ -1,9 +1,6 @@
 import React from 'react';
 import {CategoriesBox, ContentItem, Title, Content} from './style';
 import { Button } from '../Button';
-import { SectionTitle } from '../../styles/common';
-import ServicoImage from "../../assets/images/servicos.png"
-import { FiCpu } from "react-icons/fi";
 
 const content = [
   {

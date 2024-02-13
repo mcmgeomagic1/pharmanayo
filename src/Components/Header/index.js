@@ -1,8 +1,5 @@
 import React from 'react';
 import { TopFlex, BottomFlex, HeaderBox, Flex1, Flex2, Headline, Text, Hero, ButtonSection, Flex3, Flex4, HeaderImage2 } from './style';
-import { FaPhone } from 'react-icons/fa';
-import { FiGlobe } from "react-icons/fi";
-import { Container } from '../../styles/Container';
 import header1 from "../../assets/images/HeaderImage.png"
 import { Button } from '../Button';
 
