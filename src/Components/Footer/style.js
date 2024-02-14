@@ -9,6 +9,9 @@ export const FooterBox = styled.div`
     height: 400px;
     position: relative;
     //align-items: center;
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      height: 500px;
+    }
 `
 export const Title = styled.div`
 
@@ -19,7 +22,9 @@ export const Content = styled.div`
   grid-gap: 3em;
   margin-top: 0em;
   justify-content: space-between;
-  height: 87.6%;;
+  height: 87.6%;
+
+  
 
 `
 export const Flex1 = styled.div`
@@ -30,8 +35,16 @@ export const Flex1 = styled.div`
   height: 100%;
   justify-content: center;
 
+  @media(max-width: ${({theme}) => theme.tablet}) {
+      margin-top: 1.5em;
+  }
+
   img {
     width: 340px;
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      width: 180px;
+    }
   }
 
   p{

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TopFlex, BottomFlex, HeaderBox, Flex1, Flex2, Headline, Text, Hero, ButtonSection, Flex3, Flex4, HeaderImage2 } from './style';
+import { TopFlex, BottomFlex, HeaderBox, Flex1, Flex2, Headline, Text, Hero, ButtonSection, Flex3, Flex4, HeaderImage2, HeaderImage2Mobile } from './style';
 import header1 from "../../assets/images/HeaderImage.png"
 import { Button } from '../Button';
 
@@ -20,9 +20,20 @@ export const Header = () => {
                     <Button text="En savoir plus" width="100" icon  noBackground/>
                   </ButtonSection>
                 </Hero>
+                <HeaderImage2Mobile/>
               </Flex1>
               <Flex2>
                 <img src={header1} alt="header1"/>
+                <BottomFlex className='mobile'>
+                  <Flex3>
+                    <span>100%</span>
+                    <p>Rapide et efficace</p>
+                  </Flex3>
+                  <Flex4>
+                    <span>Votre besoin</span>
+                    <p>Nous importe</p>
+                  </Flex4>
+                </BottomFlex>
               </Flex2>
             </TopFlex>
             <BottomFlex>
@@ -34,6 +45,7 @@ export const Header = () => {
                 <span>Votre besoin</span>
                 <p>Nous importe</p>
               </Flex4>
+              <HeaderImage2 className="desktop"/>
             </BottomFlex>
             <HeaderImage2/>
         </HeaderBox>

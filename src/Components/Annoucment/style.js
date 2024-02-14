@@ -4,9 +4,19 @@ import styled from "styled-components";
 export const AnnoucmentBox = styled.div`
     display: flex;
     grid-gap: 3em;
-    height: 100vh;
     width: 100%;
-    align-items: center;
+    padding: 5em 0 ;
+    @media(max-width: ${({theme}) => theme.tablet}) {
+        flex-direction: column;
+        grid-gap: 0;
+        text-align: center;
+        background: ${({theme})=> theme.colors.boxBackground};
+
+        div{
+          width: 100%;
+        }
+    }
+    
 `
 export const Flex1 = styled.div`
     width: 60%;
@@ -19,21 +29,34 @@ export const Flex1 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: 1.5em;
 
     h2{
       width: 80%;
       margin: 0;
+
+      @media(max-width: ${({theme}) => theme.tablet}) {
+        margin: 0 auto;
+      }
     }
 
     span {
       font-weight: bold;
+      margin-bottom: .5em;
     }
 
     div {
       display: flex;
       position: relative;
       width: 720px;
+
+      @media(max-width: ${({theme}) => theme.desktop}) {
+        width: 580px;
+      }
+
+      @media(max-width: ${({theme}) => theme.tablet}) {
+        margin: 0 auto;
+      }
 
       button {
         border-radius: 50px;
@@ -53,9 +76,20 @@ export const Flex1 = styled.div`
       }
     }
 
+    @media(max-width: ${({theme}) => theme.desktop}) {
+      padding: 0 3em 0 2.4em;
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      padding: 0 5em;
+      height: 300px;
+      background: none;
+    }
+
 `
 export const Flex2 = styled(Flex1)`
     width: 40%;
+    
     border-radius: 0;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -63,6 +97,13 @@ export const Flex2 = styled(Flex1)`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      justify-content: flex-start;
+      height: 390px;
+      padding: 2em 0;
+    }
+
 `
 
 export const Input = styled.input`

@@ -8,7 +8,7 @@ export const Container= styled.div`
 	z-index: 2;
 
 	@media(max-width: ${({theme}) => theme.desktop}) {
-		width: 88%;
+		width: 1100px;
 	}
 
 	@media(max-width: ${({theme}) => theme.tablet}) {

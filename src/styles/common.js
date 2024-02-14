@@ -13,4 +13,16 @@ export const SectionTitle = styled.div`
     p {
         opacity: .7;
     }
+
+      @media(max-width: ${({theme}) => theme.tablet}) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        grid-gap: 1em;
+
+        h2 {
+            margin: 0 auto .5em auto;
+            width: 100%;
+        }
+      }
 `

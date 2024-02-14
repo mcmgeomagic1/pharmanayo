@@ -4,13 +4,19 @@ import styled from "styled-components";
 export const AboutUsBox = styled.div`
     display: flex;
     grid-gap: 2em;
-    height: 100vh;
     width: 100%;
-    //align-items: center;
+    padding: 5em 0;
 `
 export const Title = styled.div`
     p{
       opacity: .7;
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 `
 
@@ -18,6 +24,14 @@ export const Content = styled.div`
   display: flex;
   grid-gap: 3em;
   margin-top: 2em;
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+    flex-direction: column;
+
+    div{
+      width: 100%;
+    }
+  }
 `
 export const Flex1 = styled.div`
   display: flex;

@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 
 export const CategoriesBox = styled.div`
-    height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 5em 0 5em 0;
+
 `
 export const Title = styled.div`
     display: flex;
@@ -14,7 +12,7 @@ export const Title = styled.div`
     grid-gap: 1em;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     padding: 0;
 
     h2 {
@@ -26,11 +24,34 @@ export const Title = styled.div`
     p {
       opacity: .7;
     }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      p{
+        width: 80%;
+      }
+    }
 `
 export const Content = styled.div`
     display: flex;
     display: flex;
     height: 600px;
+    
+    @media(max-width: ${({theme}) => theme.desktop}) {
+      height: 600px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      height: 800px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 `
 
 export const ContentItem = styled.div`
@@ -67,6 +88,5 @@ export const ContentItem = styled.div`
     width: 70%;
     height: 40px;
   }
-
 `
 

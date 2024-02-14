@@ -66,6 +66,12 @@
 	}
 
 
+	@media only screen and (max-width:  1182px) {
+		header {
+			height: auto;
+			border: 1px solid black;
+		}
+	}
 
 
 

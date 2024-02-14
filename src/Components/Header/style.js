@@ -9,6 +9,9 @@ export const HeaderBox = styled.div`
     margin: 1em 0;
     position: relative;
 
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      margin-top: 2em;
+    }
 `
 
 export const TopFlex = styled.div`
@@ -16,10 +19,14 @@ export const TopFlex = styled.div`
     width: 100%;
     height: 490px;
     grid-gap: 2.5em;
-   
-
+  
     img {
 
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      flex-direction: column;
+      height: auto;
     }
 `
 
@@ -34,7 +41,18 @@ export const Flex1 = styled.div`
     height: 491px;
     top: 0;
     z-index: -0;
+
+    @media(max-width: ${({theme}) => theme.desktop}) {
+      display: none;
+    }
   }
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1em;
+  }
+ 
 `
 export const Hero = styled.div`
     padding: 4.5em 3em 4.5em 4em;
@@ -47,6 +65,25 @@ export const Hero = styled.div`
       height: 25px;
       position: relative;
     }
+
+    @media(max-width: ${({theme}) => theme.desktop}) {
+      background-color: ${({theme})=> theme.colors.boxBackground};
+      border-radius: 25px;
+      padding: 2em;
+      grid-gap: 1em;
+      height: 100%;
+      justify-content: center;
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      padding: 3em 0;
+      padding: 4.5em 3em 4.5em 4em;
+      grid-gap: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
 `
 
 
@@ -56,6 +93,24 @@ export const Flex2 = styled.div`
   img{
     height: 100%;
     height: 78.4%;
+
+    @media(max-width: ${({theme}) => theme.desktop}) {
+      height: 100%;
+      width: 100%;
+      border: 10px solid ${({theme})=> theme.colors.primary};
+      border-radius: 25px;
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      border: 0;
+      width: 70%;
+    }
+
+  }
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+      grid-gap: 2em;
+      display: flex;
   }
 `
 export const Headline = styled.p`
@@ -77,10 +132,36 @@ export const BottomFlex = styled.div`
   display: flex;
   height: 150px;
   grid-gap: 2em;
+
+  @media(max-width: ${({theme}) => theme.desktop}) {
+    grid-gap: 2.8em;
+  }
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+      display: none;
+  }
+
+
+  &&.mobile {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      @media(max-width: ${({theme}) => theme.tablet}) {
+        display: flex;
+      }
+
+      div {
+        width: 100%;
+      }
+  }
 `
 
 export const ButtonSection = styled.div`
   display: flex;
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+    justify-content: center;
+  }
 `
 
 
@@ -104,6 +185,11 @@ export const Flex3 = styled.div`
     opacity: .7;
   }
 
+  @media(max-width: ${({theme}) => theme.desktop}) {
+    width: 32.2%;
+
+    justify-content: center;
+  }
 
 `
 
@@ -112,11 +198,18 @@ export const Flex4 = styled(Flex3)`
   border: 0;
   display: block;
   padding-top: 3.2em;
+  @media(max-width: ${({theme}) => theme.tablet}) {
+    padding-top: 2em;
+  }
 
   span {
     font-size: 180%;
     font-weight: bold;
     margin-bottom: .7em;
+  }
+
+  @media(max-width: ${({theme}) => theme.desktop}) {
+    width: 32.2%;
   }
 
 `
@@ -133,7 +226,33 @@ export const HeaderImage2 = styled.div`
   background-position: center;
   background-size: cover;
 
+  @media(max-width: ${({theme}) => theme.desktop}) {
+    display: none;
+  }
 
+  &&.desktop {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 40%;
+  }
 `
 
+export const HeaderImage2Mobile = styled.div`
+  background: url(${header2});
+  width: 737px;
+  height: 250px;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 1.5em;
+  display: none;
 
+  @media(max-width: ${({theme}) => theme.tablet}) {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
+`

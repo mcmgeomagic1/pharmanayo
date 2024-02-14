@@ -3,21 +3,36 @@ import styled from "styled-components";
 
 export const ServicosBox = styled.div`
     grid-gap: 2em;
-    height: 100vh;
     position: relative;
-    padding: 0em 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 5em 0;
+
+    
 `
 
 export const ServicesImage = styled.img`
     margin-left: -4.4em;
+
+    @media(max-width: ${({theme}) => theme.desktop}) {
+      width: 50%;
+      margin-left: -3.9em;
+    }
+
 `
 
 export const Content = styled.div`
     display: flex;
     justify-content: space-between;
+
+      @media(max-width: ${({theme}) => theme.tablet}) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+
+        img {
+          width: 530px;
+        
+        }
+      }
 
 `
 
@@ -27,6 +42,12 @@ export const Grids = styled.div`
   display: grid; 
   grid-template-columns: repeat(2, auto);
   grid-gap: 1em;
+
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+        width: 100%;
+  }
+    
 `
 
 export const ContentItem = styled.div`
@@ -41,6 +62,7 @@ export const ContentItem = styled.div`
   align-items: center;
   text-align: center;
   padding: 1em;
+
 
   h3 {
     margin-bottom: 0;
