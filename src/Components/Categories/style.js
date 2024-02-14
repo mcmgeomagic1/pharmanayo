@@ -5,6 +5,11 @@ export const CategoriesBox = styled.div`
     width: 100%;
     padding: 5em 0 5em 0;
 
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      margin-top: 10em;
+      
+    }
+
 `
 export const Title = styled.div`
     display: flex;
@@ -51,6 +56,14 @@ export const Content = styled.div`
       height: 800px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      height: 2100px;
+      
     }
 `
 

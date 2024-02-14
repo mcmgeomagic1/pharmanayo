@@ -52,6 +52,10 @@ export const Flex1 = styled.div`
       flex-direction: column;
       grid-gap: 1em;
   }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      height: auto;
+    }
  
 `
 export const Hero = styled.div`
@@ -76,14 +80,19 @@ export const Hero = styled.div`
     }
 
     @media(max-width: ${({theme}) => theme.tablet}) {
-      padding: 3em 0;
-      padding: 4.5em 3em 4.5em 4em;
+      padding: 4.5em 3em 4.5em 3em;
       grid-gap: 2em;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
     }
+
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      padding: 4.5em 3em 4.5em 3em;
+    }
+
+    
 `
 
 
@@ -112,6 +121,13 @@ export const Flex2 = styled.div`
       grid-gap: 2em;
       display: flex;
   }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+  }
 `
 export const Headline = styled.p`
   z-index: 5;
@@ -119,6 +135,10 @@ export const Headline = styled.p`
   font-weight: 900;
   line-height: 40px;
   width: 100%;
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+    font-size: 160%;
+  }
 `
 
 export const Text = styled.p`
@@ -161,6 +181,18 @@ export const ButtonSection = styled.div`
 
   @media(max-width: ${({theme}) => theme.tablet}) {
     justify-content: center;
+  }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      flex-direction: column;
+
+      p {
+        width: 100%;
+      }
+
+      img {
+        width: 30px;
+      }
   }
 `
 

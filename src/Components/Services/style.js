@@ -6,7 +6,9 @@ export const ServicosBox = styled.div`
     position: relative;
     padding: 5em 0;
 
-    
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      padding: .5em 0em 0 5em 0;
+    }
 `
 
 export const ServicesImage = styled.img`
@@ -34,6 +36,16 @@ export const Content = styled.div`
         }
       }
 
+      @media(max-width: ${({theme}) => theme.mobile}) {
+
+        img {
+          width: 330px;
+          margin-left: -1.7em;
+        }
+      }
+
+
+
 `
 
 export const Grids = styled.div`
@@ -47,7 +59,10 @@ export const Grids = styled.div`
   @media(max-width: ${({theme}) => theme.tablet}) {
         width: 100%;
   }
-    
+
+  @media(max-width: ${({theme}) => theme.tablet}) {
+    grid-template-columns: repeat(1, auto);
+  }
 `
 
 export const ContentItem = styled.div`

@@ -9,8 +9,10 @@ export const FooterBox = styled.div`
     height: 400px;
     position: relative;
     //align-items: center;
-    @media(max-width: ${({theme}) => theme.tablet}) {
-      height: 500px;
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      height: auto;
+      padding-bottom: 5.5em;
+      padding-top: 1em;
     }
 `
 export const Title = styled.div`
@@ -23,6 +25,12 @@ export const Content = styled.div`
   margin-top: 0em;
   justify-content: space-between;
   height: 87.6%;
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      flex-direction: column;
+      height: auto;
+      grid-gap: 2em;
+    }
 
   
 
@@ -39,6 +47,10 @@ export const Flex1 = styled.div`
       margin-top: 1.5em;
   }
 
+  @media(max-width: ${({theme}) => theme.mobile}) {
+    width: 100%;
+ }
+
   img {
     width: 340px;
 
@@ -50,6 +62,10 @@ export const Flex1 = styled.div`
   p{
     margin-top: -1.5em;
     opacity: .7;
+
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      width: 100%;
+    }
   }
 
   
@@ -71,6 +87,12 @@ export const Flex2 = styled.div`
   div{
    
   }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      flex-direction: column;
+      padding-top: 0;
+      grid-gap: 2em;
+    }
 `
 export const Box = styled.div`
     display: flex;

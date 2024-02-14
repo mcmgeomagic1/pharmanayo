@@ -58,6 +58,14 @@ export const Flex1 = styled.div`
         margin: 0 auto;
       }
 
+      
+      @media(max-width: ${({theme}) => theme.mobile}) {
+        width: 320px;
+        flex-direction: column;
+        grid-gap: 1em;
+        
+      }
+
       button {
         border-radius: 50px;
         background-color: ${({ theme}) => theme.colors.primary};
@@ -73,6 +81,12 @@ export const Flex1 = styled.div`
         height: 67px;
         position: absolute;
         right: 0;
+
+        
+      @media(max-width: ${({theme}) => theme.tablet}) {
+        position: relative;
+        width: 100%;
+      }
       }
     }
 
@@ -84,6 +98,12 @@ export const Flex1 = styled.div`
       padding: 0 5em;
       height: 300px;
       background: none;
+    }
+
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      height: 500px;
+      padding: 0 2em;
+      padding: 0 2em;
     }
 
 `
@@ -102,6 +122,17 @@ export const Flex2 = styled(Flex1)`
       justify-content: flex-start;
       height: 390px;
       padding: 2em 0;
+    }
+
+    @media(max-width: ${({theme}) => theme.tablet}) {
+      height: 330px;
+    }
+
+    img {
+      @media(max-width: ${({theme}) => theme.mobile}) {
+      margin-top: 3em;
+      width: 300px;
+    }
     }
 
 `

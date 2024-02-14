@@ -33,7 +33,22 @@ export const ContactBar = styled.div`
   justify-content: flex-end;
   align-items: center;
   grid-gap: 2em;
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      display: none;
+  }
 `;
+export const ContactBarPhone = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-gap: 2em;
+  @media(max-width: ${({theme}) => theme.mobile}) {
+    justify-content: center;
+  }
+  
+`;
+
 
 export const LanguageSelect = styled.div`
   background: ${({theme})=> theme.colors.boxBackground};
@@ -63,6 +78,8 @@ export const ContactInfo = styled.div`
     transform: rotate(90deg);
     width: 14px;
   }
+
+ 
 `;
 
 
@@ -75,6 +92,15 @@ export const MenuBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  svg {
+    font-size: 40px;
+    display: none;
+
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      display: block;     
+    }
+  }
 `;
 
 export const Logo = styled.img`
@@ -84,14 +110,55 @@ export const Logo = styled.img`
 export const MenuItems = styled.div`
   display: flex;
   align-items: center;
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      display: none;
+  }
+
+  &&.mobile {
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      display: block;
+      text-align: center;
+      
+  }  
+  }
 `;
 
 export const MenuItem = styled.div`
   margin-left: 20px; 
   opacity: 0.7;
 
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      margin-bottom: .5em;
+      margin-left: 0;
+  }
+
   &:first-child {
     opacity: 1;
     font-weight: bold;
   }
 `;
+
+export const MenuPhoneBox = styled.div`
+  background: white;
+  display: none;
+  font-size: 21px;
+  position: fixed;
+  z-index: 99990;
+  width: 100%;
+  height: 100vh;
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 1em;
+  }
+`
+export const Close = styled.div`
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        font-size: 30px;
+`

@@ -13,6 +13,7 @@
 		font-size: 16px;
 		font-family: 'Poppoins', sans-serif;
     	font-weight: 400;
+		overflow-x: hidden;
 	}
 
 	header {
@@ -69,7 +70,11 @@
 	@media only screen and (max-width:  1182px) {
 		header {
 			height: auto;
-			border: 1px solid black;
+		}
+
+		h2 {
+			font-size: 140%;
+			width: 100%;
 		}
 	}
 
