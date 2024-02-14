@@ -7,7 +7,7 @@ export const ServicosBox = styled.div`
     padding: 5em 0;
 
     @media(max-width: ${({theme}) => theme.mobile}) {
-      padding: .5em 0em 0 5em 0;
+      padding: 0em 0em 0 5em 0;
     }
 `
 
@@ -37,7 +37,6 @@ export const Content = styled.div`
       }
 
       @media(max-width: ${({theme}) => theme.mobile}) {
-
         img {
           width: 330px;
           margin-left: -1.7em;

@@ -7,7 +7,7 @@ export const CategoriesBox = styled.div`
 
     @media(max-width: ${({theme}) => theme.mobile}) {
       margin-top: 10em;
-      
+      padding: 5em 0 0em 0;
     }
 
 `
