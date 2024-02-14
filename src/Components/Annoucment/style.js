@@ -102,8 +102,7 @@ export const Flex1 = styled.div`
 
     @media(max-width: ${({theme}) => theme.mobile}) {
       height: 500px;
-      padding: 0 2em;
-      padding: 0 2em;
+      padding: 0 1em;
     }
 
 `

@@ -97,7 +97,6 @@ export const ContentItem = styled.div`
 
   h3 {
     margin-bottom: 0;
-    font-size: ${({theme})=> theme.fontSize.big};
     width: 70%;
     height: 40px;
   }

@@ -59,8 +59,14 @@ export const Grids = styled.div`
         width: 100%;
   }
 
-  @media(max-width: ${({theme}) => theme.tablet}) {
+  @media(max-width: ${({theme}) => theme.mobile}) {
     grid-template-columns: repeat(1, auto);
+  }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+    svg {
+      font-size: 25px;
+    }
   }
 `
 

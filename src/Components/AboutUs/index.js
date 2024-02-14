@@ -1,10 +1,32 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {AboutUsBox, Title, Content, Flex1, Flex2, Field, Form} from './style';
 import { Container } from '../../styles/Container';
 import { Button } from '../Button';
 import { MdOutlineEmail } from "react-icons/md";
 
+
+
 export const AboutUs= () => {
+  const form = useRef();
+
+  /*const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };*/
+
+
   const overview = [
     {
       title: "✨ Vue d'ensemble",
@@ -37,21 +59,22 @@ export const AboutUs= () => {
                 ))}
             </Flex1>
             <Flex2>
-                <Form>
+                <Form ref={form} >
                   <h3><MdOutlineEmail /> Contactez-nous</h3>
                   <Field>
                     <label>Email</label>
-                    <input placeholder="entrez votre email"/>
+                    <input type="email" name="user_email" placeholder="entrez votre email"/>
                   </Field>
                   <Field>
                     <label>Sujet</label>
-                    <input placeholder="entrez le sujet"/>
+                    <input type="text" name="user_name" placeholder="entrez le sujet"/>
                   </Field>
                   <Field>
                     <label>Message</label>
                     <textarea placeholder="entrez votre message"/>
                   </Field>
                   <Button text="envoyer"/>
+                  <input type="submit" value="Send" />
                 </Form>
             </Flex2>
           </Content>

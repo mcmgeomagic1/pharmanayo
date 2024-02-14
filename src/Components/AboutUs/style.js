@@ -54,7 +54,7 @@ export const Flex2 = styled.div`
   display: flex;
   width: 50%;
 `
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;

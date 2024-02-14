@@ -40,7 +40,7 @@ export const Services= () => {
               <Grids>
               {content.map((item, index) => (
                   <ContentItem key={index} background={index % 3 === 0}>
-                      <FiCpu/>
+                      <FiCpu size="24"/>
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
                   </ContentItem>

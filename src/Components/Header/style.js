@@ -188,6 +188,7 @@ export const ButtonSection = styled.div`
 
       p {
         width: 100%;
+        font-size: 100%;
       }
 
       img {

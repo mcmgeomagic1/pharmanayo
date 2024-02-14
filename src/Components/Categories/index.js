@@ -4,7 +4,7 @@ import { Button } from '../Button';
 
 const content = [
   {
-    text: "Douleur de gorge",
+    text: "Soins des femmes",
     image: require('../../assets/images/1.jpg')
   },
   {
@@ -22,6 +22,10 @@ const content = [
   {
     text: "Allergies",
     image: require('../../assets/images/5.jpg')
+  },
+  {
+    text: "Femme enceinte",
+    image: require('../../assets/images/6.jpg')
   }
 ];
 
@@ -37,7 +41,9 @@ export const Categories= () => {
               {content.map((item, index) => (
                   <ContentItem key={index} image={item.image}>
                       <h3>{item.text}</h3>
-                      <Button text="Explorar categoria" noBackground border="white" textColor="white" width="300px"/>
+                      <a href="https://wa.me/242068438692" target='blank'>
+                        <Button text="Explorar categoria" noBackground border="white" textColor="white" width="300px"/>
+                      </a>
                   </ContentItem>
                 
               ))}
