@@ -42,7 +42,7 @@ export const Categories= () => {
                   <ContentItem key={index} image={item.image}>
                       <h3>{item.text}</h3>
                       <a href="https://wa.me/242068438692" target='blank'>
-                        <Button text="Explorar categoria" noBackground border="white" textColor="white" width="300px"/>
+                        <Button text="Explorer la catégorie" noBackground border="white" textColor="white" width="300px"/>
                       </a>
                   </ContentItem>
                 
