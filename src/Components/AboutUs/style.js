@@ -120,5 +120,11 @@ export const ButtonField= styled.div`
       grid-gap: .5em;
       width: 100%;
       height: 67px;
+
+      @media(max-width: ${({theme}) => theme.mobile}) {
+        height: 47px;
+        padding:0;
+      }
+  
   }
 `

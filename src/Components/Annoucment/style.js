@@ -97,19 +97,18 @@ export const Flex1 = styled.div`
 
     @media(max-width: ${({theme}) => theme.tablet}) {
       padding: 0 5em;
-      height: 300px;
+      height: 160px;
       background: none;
     }
 
     @media(max-width: ${({theme}) => theme.mobile}) {
-      height: 500px;
+      height: 300px;
       padding: 0 1em;
     }
 
 `
 export const Flex2 = styled(Flex1)`
     width: 40%;
-    
     border-radius: 0;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -121,16 +120,16 @@ export const Flex2 = styled(Flex1)`
     @media(max-width: ${({theme}) => theme.tablet}) {
       justify-content: flex-start;
       height: 390px;
-      padding: 2em 0;
+      padding: 0em 0;
     }
 
-    @media(max-width: ${({theme}) => theme.tablet}) {
-      height: 330px;
+    @media(max-width: ${({theme}) => theme.mobile}) {
+      height: 290px;
     }
 
     img {
       @media(max-width: ${({theme}) => theme.mobile}) {
-      margin-top: 3em;
+      margin-top: 1em;
       width: 300px;
     }
     }

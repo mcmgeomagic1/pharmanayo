@@ -17,6 +17,11 @@ export const ButtonBox = styled.p`
   width: ${props => props.width};
   height: 67px;
 
+  @media(max-width: ${({theme}) => theme.mobile}) {
+    height: 47px; 
+    font-size: 90%;
+  }
+
   svg {
     width: 25px;
     position: relative;

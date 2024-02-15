@@ -62,7 +62,7 @@ export const Content = styled.div`
   }
 
   @media(max-width: ${({theme}) => theme.mobile}) {
-      height: 2100px;
+      height: 2600px;
       
     }
 `
@@ -93,6 +93,11 @@ export const ContentItem = styled.div`
     background-position: center;
     background-size: cover;
   }
+
+  @media(max-width: ${({theme}) => theme.mobile}) {
+     grid-gap: 0;
+      
+    }
   
 
   h3 {

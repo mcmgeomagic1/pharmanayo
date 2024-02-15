@@ -102,6 +102,7 @@ export const Flex2 = styled.div`
   img{
     height: 100%;
     height: 78.4%;
+    object-fit: cover;
 
     @media(max-width: ${({theme}) => theme.desktop}) {
       height: 100%;
@@ -211,11 +212,19 @@ export const Flex3 = styled.div`
   span {
     font-size: 240%;
     font-weight: bold;
+
+    @media(max-width: ${({theme}) => theme.mobile}) {
+    font-size: 200%;
+    }
   }
 
   p {
     font-size: 18px;
     opacity: .7;
+
+    @media(max-width: ${({theme}) => theme.mobile}) {
+    font-size: 16px;
+    }
   }
 
   @media(max-width: ${({theme}) => theme.desktop}) {
