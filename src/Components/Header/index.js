@@ -16,8 +16,10 @@ export const Header = () => {
                   <Headline>Transformant la distribution pharmaceutique pour la rendre plus facile.</Headline>
                   <Text>Transformer la distribution pharmaceutique est plus facile que jamais avec Pharmanayo. Nous connectons les pharmacies, les cliniques médicales et les clients sur une plateforme intégrée, rendant l'achat de médicaments rapide, efficace et sûr</Text>
                   <ButtonSection>
-                    <Button text="Demander une livraison" width="290px" whatsapp={true}/>
-                    <Button text="En savoir plus" width="100" icon  noBackground/>
+                    <a href="https://wa.me/242068438692" target='blank'>
+                      <Button text="Demander une livraison" width="290px" whatsapp={true}/>
+                    </a>
+                    <a href="#categories"><Button text="En savoir plus" width="100" icon  noBackground/></a>
                   </ButtonSection>
                 </Hero>
                 <HeaderImage2Mobile/>

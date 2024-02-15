@@ -84,7 +84,12 @@ export const Field= styled.div`
     padding: 1em;
     border-radius: 50px;
     border: 2px solid #3CA133;
+
+
+  
   }
+
+
 
   textarea {
     height: 100px;
@@ -99,4 +104,21 @@ export const Field= styled.div`
 
 
 `
-
+export const ButtonField= styled.div`
+  input {
+    border-radius: 50px; 
+      background-color: ${({ theme }) =>theme.colors.primary};
+      color: #000;
+      border: 0;
+      padding: 1.2em 1.4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 110%;
+      grid-gap: .5em;
+      width: 100%;
+      height: 67px;
+  }
+`

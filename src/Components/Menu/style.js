@@ -132,11 +132,6 @@ export const MenuItem = styled.div`
       margin-bottom: .5em;
       margin-left: 0;
   }
-
-  &:first-child {
-    opacity: 1;
-    font-weight: bold;
-  }
 `;
 
 export const MenuPhoneBox = styled.div`

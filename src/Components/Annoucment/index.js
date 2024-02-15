@@ -5,7 +5,7 @@ import Image from "../../assets/images/Annoucment.png"
 export const Annoucment= () => {
   return (
     <>
-        <AnnoucmentBox>
+        <AnnoucmentBox id="platform">
           <Flex1>
             <h2>Bientôt, découvrez la plateforme révolutionnaire Pharmanayo."</h2>
             <p>Nous construisons une plateforme innovante qui révolutionnera la distribution pharmaceutique. Bientôt, vous aurez accès à une solution intégrée qui simplifiera l'achat et la livraison de médicaments, garantissant rapidité, sécurité et efficacité. Restez à l'écoute pour plus de mises à jour!</p>

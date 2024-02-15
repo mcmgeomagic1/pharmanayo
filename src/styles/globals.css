@@ -54,8 +54,16 @@
 		line-height: 27px;
 	}
 
-	a {
+	a:link, a:active, a:visited {
 		text-decoration: none;
+		color: #000;
+		font-weight: 100;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: #3CA133;
+		font-weight: 700;
 	}
 
 	svg{

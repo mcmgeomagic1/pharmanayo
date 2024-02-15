@@ -17,10 +17,10 @@ export const Footer= () => {
             <Flex2>
               <Box>
                 <h3>Navigation</h3>
-                <div>Accueil</div>
-                <div>Services</div>
-                <div>Plateforme</div>
-                <div>À propos de nous</div>
+                <div><a href="#">Accueil</a></div>
+                  <div><a href="#service">Services</a></div>
+                  <div><a href="#platform">Plateforme</a></div>
+                  <div><a href="#aboutus">À propos de nous</a></div>
               </Box>
               <Box>
                 <h3>Contact</h3>

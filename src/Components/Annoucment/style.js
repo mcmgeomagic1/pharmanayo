@@ -49,6 +49,7 @@ export const Flex1 = styled.div`
       display: flex;
       position: relative;
       width: 720px;
+      display: none;
 
       @media(max-width: ${({theme}) => theme.desktop}) {
         width: 580px;

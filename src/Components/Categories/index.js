@@ -32,7 +32,7 @@ const content = [
 export const Categories= () => {
   return (
     <>
-        <CategoriesBox>
+        <CategoriesBox id="categories">
           <Title>
               <h2>Explorez nos catégories</h2>
               <p>Découvrez nos différentes catégories de produits pharmaceutiques pour trouver les solutions idéales pour votre bien-être</p>

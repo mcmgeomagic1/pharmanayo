@@ -39,10 +39,11 @@ export const Menu = () => {
         <Logo src={LogoImage} alt="Logo"/>
         <IoMenu onClick={()=> toggleMenu()}/>
         <MenuItems>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>Services</MenuItem>
-          <MenuItem>Plateforme</MenuItem>
-          <MenuItem>À propos de nous</MenuItem>
+          <a href="#"><MenuItem>Home</MenuItem></a>
+          <a href="#categories"><MenuItem>Catégories</MenuItem></a>
+          <a href="#service"><MenuItem>Services</MenuItem></a>
+          <a href="#platform"><MenuItem>Plateforme</MenuItem></a>
+          <a href="#aboutus"><MenuItem>À propos de nous</MenuItem></a>
         </MenuItems>
       </MenuBar>
       </Container>
@@ -60,10 +61,11 @@ const MenuPhone =({toggleMenu})=> {
     <MenuPhoneBox>
       <Close><IoMdClose onClick={()=> toggleMenu()}/></Close>
         <MenuItems className='mobile'>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>Services</MenuItem>
-          <MenuItem>Plateforme</MenuItem>
-          <MenuItem>À propos de nous</MenuItem>
+          <a href="#"><MenuItem>Home</MenuItem></a>
+          <a href="#categories"><MenuItem>Catégories</MenuItem></a>
+          <a href="#service"><MenuItem>Services</MenuItem></a>
+          <a href="#platform"><MenuItem>Plateforme</MenuItem></a>
+          <a href="#aboutus"><MenuItem>À propos de nous</MenuItem></a>
         </MenuItems>
         <ContactBarPhone>
             <LanguageSelect>

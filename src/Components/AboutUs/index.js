@@ -1,31 +1,36 @@
-import React, {useRef} from 'react';
-import {AboutUsBox, Title, Content, Flex1, Flex2, Field, Form} from './style';
+import React, { useRef, useState } from 'react';
+import { AboutUsBox, Title, Content, Flex1, Flex2, Field, Form, ButtonField } from './style'; // Assuming you have a Popup styled-component
 import { Container } from '../../styles/Container';
 import { Button } from '../Button';
 import { MdOutlineEmail } from "react-icons/md";
-
-
+import emailjs from '@emailjs/browser';
+import Popup from '../PopUp';
 
 export const AboutUs= () => {
   const form = useRef();
+  const [showPopup, setShowPopup] = useState(false);
 
-  /*const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_aqs9h2c', 'template_3y2n3gb', form.current, {
+        publicKey: 'v5j0EbJDiQuo3pYfc',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          setShowPopup(true); // Show the popup on success
+          setTimeout(() => {
+            setShowPopup(false); // Hide the popup after 3 seconds
+          }, 3000);
         },
         (error) => {
           console.log('FAILED...', error.text);
         },
       );
-  };*/
+  };
 
+  console.log(form)
 
   const overview = [
     {
@@ -41,9 +46,10 @@ export const AboutUs= () => {
       description: "Rue de Belmonte, Bairro Popular, Kilamba Kiaxi, Luanda, Angola"
     }
   ];
+
   return (
     <>
-        <AboutUsBox>
+      <AboutUsBox id="aboutus">
         <Container>
           <Title>
             <h2>À propos de nous</h2>
@@ -51,36 +57,37 @@ export const AboutUs= () => {
           </Title>
           <Content>
             <Flex1>
-                {overview.map(item => (
-                  <div key={item.title}>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
-                ))}
+              {overview.map(item => (
+                <div key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}
             </Flex1>
             <Flex2>
-                <Form ref={form} >
-                  <h3><MdOutlineEmail /> Contactez-nous</h3>
-                  <Field>
-                    <label>Email</label>
-                    <input type="email" name="user_email" placeholder="entrez votre email"/>
-                  </Field>
-                  <Field>
-                    <label>Sujet</label>
-                    <input type="text" name="user_name" placeholder="entrez le sujet"/>
-                  </Field>
-                  <Field>
-                    <label>Message</label>
-                    <textarea placeholder="entrez votre message"/>
-                  </Field>
-                  <Button text="envoyer"/>
-                  <input type="submit" value="Send" />
-                </Form>
+              <Form ref={form} onSubmit={sendEmail}>
+                <h3><MdOutlineEmail /> Contactez-nous</h3>
+                <Field>
+                  <label>Email</label>
+                  <input type="email" name="from_name" placeholder="entrez votre email" required/>
+                </Field>
+                <Field>
+                  <label>Nom</label>
+                  <input type="text" name="from_name" placeholder="entrez le nom" required/>
+                </Field>
+                <Field>
+                  <label>Message</label>
+                  <textarea name="message"  placeholder="entrez votre message" required/>
+                </Field>
+                <ButtonField>
+                  <input  type="submit" value="envoyer" />
+                </ButtonField>
+              </Form>
             </Flex2>
           </Content>
         </Container>
       </AboutUsBox>
+      {showPopup && <Popup/>}
     </>
   );
 }
-

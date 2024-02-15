@@ -27,13 +27,15 @@ const content = [
 export const Services= () => {
   return (
     <>
-        <ServicosBox>
+        <ServicosBox id="service">
            <SectionTitle>
               <div>
                 <h2>Pourquoi nous sommes le bon choix. Découvrez nos services</h2>
                 <p>Pharmanayo simplifie la distribution pharmaceutique</p>
               </div>
-              <Button text="Demander une livraison" width="290px" whatsapp={true}/>
+              <a href="https://wa.me/242068438692" target='blank'>
+                <Button text="Demander une livraison" width="290px" whatsapp={true}/>
+              </a>
            </SectionTitle>
            <Content>
               <ServicesImage src={ServicoImage} alt="servico"/>
