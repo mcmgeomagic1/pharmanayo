@@ -61,11 +61,11 @@ const MenuPhone =({toggleMenu})=> {
     <MenuPhoneBox>
       <Close><IoMdClose onClick={()=> toggleMenu()}/></Close>
         <MenuItems className='mobile'>
-          <a href="#home"><MenuItem>Home</MenuItem></a>
-          <a href="#categories"><MenuItem>Catégories</MenuItem></a>
-          <a href="#service"><MenuItem>Services</MenuItem></a>
-          <a href="#platform"><MenuItem>Plateforme</MenuItem></a>
-          <a href="#aboutus"><MenuItem>À propos de nous</MenuItem></a>
+          <a href="#home" onClick={()=> toggleMenu()}><MenuItem>Home</MenuItem></a>
+          <a href="#categories" onClick={()=> toggleMenu()}><MenuItem>Catégories</MenuItem></a>
+          <a href="#service" onClick={()=> toggleMenu()}><MenuItem>Services</MenuItem></a>
+          <a href="#platform" onClick={()=> toggleMenu()}><MenuItem>Plateforme</MenuItem></a>
+          <a href="#aboutus" onClick={()=> toggleMenu()}><MenuItem>À propos de nous</MenuItem></a>
         </MenuItems>
         <ContactBarPhone>
             <LanguageSelect>

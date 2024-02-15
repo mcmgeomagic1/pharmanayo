@@ -14,6 +14,12 @@ export const SectionTitle = styled.div`
         opacity: .7;
     }
 
+    a {
+        p{
+            opacity: 1;
+        }
+    }
+
       @media(max-width: ${({theme}) => theme.tablet}) {
         flex-direction: column;
         align-items: center;
