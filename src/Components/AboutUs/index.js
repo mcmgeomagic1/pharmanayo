@@ -42,7 +42,7 @@ export const AboutUs= () => {
     },
     {
       title: "📍 Adresse",
-      description: "Rue de Belmonte, Bairro Popular, Kilamba Kiaxi, Luanda, Angola"
+      description: "Pointe-noire, Rond point ex Bata, Immeuble 2MP, 2eme étage bureau C."
     }
   ];
 

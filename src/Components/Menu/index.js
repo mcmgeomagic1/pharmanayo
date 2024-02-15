@@ -30,7 +30,7 @@ export const Menu = () => {
             </LanguageSelect>
             <ContactInfo>
               <FaPhone size={24} />
-              <PhoneNumber>+244924456789</PhoneNumber> 
+              <PhoneNumber>+242052003905</PhoneNumber> 
             </ContactInfo>
           </ContactBar>
       </Container>
@@ -74,7 +74,7 @@ const MenuPhone =({toggleMenu})=> {
             </LanguageSelect>
             <ContactInfo>
               <FaPhone size={24} />
-              <PhoneNumber>+244924456789</PhoneNumber> 
+              <PhoneNumber>+242052003905</PhoneNumber> 
             </ContactInfo>
           </ContactBarPhone>
     </MenuPhoneBox>

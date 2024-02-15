@@ -24,8 +24,8 @@ export const Footer= () => {
               </Box>
               <Box>
                 <h3>Contact</h3>
-                <div style={{color: "#3CA133"}}>+24495587374</div>
-                <div>info@pharmanayo.com</div>
+                <div style={{color: "#3CA133"}}>+242052003905</div>
+                <div>pharmanayo@gmail.com</div>
                 <Socias>
                   <FaWhatsapp />
                   <FaFacebook />
