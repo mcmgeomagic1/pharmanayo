@@ -17,7 +17,7 @@ export const Menu = () => {
   };
 
   return (
-    <Menubox>
+    <Menubox id="home">
       <AlertBar>
         <Emoji role="img" aria-label="Fire">🔥</Emoji>
         <Text>Application mobile disponible bientôt</Text>
@@ -39,7 +39,7 @@ export const Menu = () => {
         <Logo src={LogoImage} alt="Logo"/>
         <IoMenu onClick={()=> toggleMenu()}/>
         <MenuItems>
-          <a href="#"><MenuItem>Home</MenuItem></a>
+          <a href="#home"><MenuItem>Home</MenuItem></a>
           <a href="#categories"><MenuItem>Catégories</MenuItem></a>
           <a href="#service"><MenuItem>Services</MenuItem></a>
           <a href="#platform"><MenuItem>Plateforme</MenuItem></a>
@@ -61,7 +61,7 @@ const MenuPhone =({toggleMenu})=> {
     <MenuPhoneBox>
       <Close><IoMdClose onClick={()=> toggleMenu()}/></Close>
         <MenuItems className='mobile'>
-          <a href="#"><MenuItem>Home</MenuItem></a>
+          <a href="#home"><MenuItem>Home</MenuItem></a>
           <a href="#categories"><MenuItem>Catégories</MenuItem></a>
           <a href="#service"><MenuItem>Services</MenuItem></a>
           <a href="#platform"><MenuItem>Plateforme</MenuItem></a>

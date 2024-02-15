@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { AboutUsBox, Title, Content, Flex1, Flex2, Field, Form, ButtonField } from './style'; // Assuming you have a Popup styled-component
 import { Container } from '../../styles/Container';
-import { Button } from '../Button';
 import { MdOutlineEmail } from "react-icons/md";
 import emailjs from '@emailjs/browser';
 import Popup from '../PopUp';
