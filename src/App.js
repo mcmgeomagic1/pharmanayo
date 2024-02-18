@@ -9,6 +9,11 @@ import { Container } from "./styles/Container";
 import { Main } from "./styles/common";
 
 function App() {
+  const closed = true
+
+  if(closed === true) {
+    return <h3 style={{margin: "2em auto", width: "16.7%"}}>This website has been temporary paused</h3>
+  }else{
   return (
     <Main>
       <header>
@@ -26,6 +31,7 @@ function App() {
       <Footer/>
     </Main>
   );
+  }
 }
 
 export default App;
