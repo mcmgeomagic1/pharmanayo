@@ -10,7 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <ThemeProvider theme={Theme}>
-        <App />
+        {/*<App />*/}
+        <h2>This website has been temporary paused</h2Lau Silva feat Mario Suendes e João Guia - Siga la Luna>
+        <h2>This website has been temporary paused</h2Lau Silva feat Mario Suendes e João Guia - Siga la Luna>
      </ThemeProvider>
   </React.StrictMode>
 );
